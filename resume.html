@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Edidi Abdullateef Olawale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --secondary: #475569;
+            --accent: #2563eb;
+            --bg: #ffffff;
+            --text: #1e293b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.5;
+            color: var(--text);
+            background: var(--bg);
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                margin: 0;
+            }
+
+            .no-print {
+                display: none;
+            }
+
+            @page {
+                margin: 0.5in;
+            }
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 28pt;
+            color: var(--primary);
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+
+        .title {
+            font-size: 14pt;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 10pt;
+            color: var(--secondary);
+        }
+
+        .contact-info a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 14pt;
+            color: var(--primary);
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .summary {
+            font-size: 11pt;
+            margin-bottom: 20px;
+        }
+
+        .experience-item,
+        .project-item {
+            margin-bottom: 20px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .company-name,
+        .project-name {
+            font-size: 12pt;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .role-title {
+            font-size: 11pt;
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .date-location {
+            font-size: 10pt;
+            color: var(--secondary);
+            font-style: italic;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+
+        li {
+            font-size: 10.5pt;
+            margin-bottom: 4px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .skill-category {
+            font-size: 10.5pt;
+        }
+
+        .skill-category strong {
+            color: var(--primary);
+        }
+
+        .footer-note {
+            margin-top: 40px;
+            font-size: 9pt;
+            color: #94a3b8;
+            text-align: center;
+        }
+
+        .btn-print {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            transition: all 0.2s;
+        }
+
+        .btn-print:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn-print no-print" onclick="window.print()">Print to PDF</button>
+
+    <header>
+        <h1>Edidi Abdullateef Olawale</h1>
+        <div class="title">Product Growth Engineer | Full-Stack Developer</div>
+        <div class="contact-info">
+            <span>Lagos, Nigeria</span>
+            <span>|</span>
+            <a href="tel:+2348143598369">+234 814 359 8369</a>
+            <span>|</span>
+            <a href="mailto:Cloudsparkdigital@gmail.com">Cloudsparkdigital@gmail.com</a>
+            <span>|</span>
+            <a href="https://www.linkedin.com/in/edidi-lateef-93325938b/">LinkedIn</a>
+            <span>|</span>
+            <a href="https://cloudsparkdigital.vercel.app">Portfolio</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p class="summary">
+            Versatile Product Growth Engineer with over 3 years of experience in building and scaling digital products.
+            Specialized in integrating engineering precision with data-driven growth strategies. Expert in Full-Stack
+            Development (React/Next.js/Firebase), SEO Architecture, and technical content frameworks. Proven track
+            record of launching SaaS products from 0 to 1 and driving user acquisition through technical optimization.
+        </p>
+    </section>
+
+    <section>
+        <h2>Work Experience</h2>
+
+        <div class="experience-item">
+            <div class="item-header">
+                <span class="company-name">Nomolabs</span>
+                <span class="date-location">April 2026 – Present</span>
+            </div>
+            <div class="role-title">Product Growth Lead (Foundational)</div>
+            <ul>
+                <li>Leading the technical growth strategy for a 0-1 SaaS launch, establishing waitlist conversion
+                    architecture and technical SEO foundations.</li>
+                <li>Implementing indexing-ready SEO structures to ensure maximum visibility from the initial launch
+                    phase.</li>
+                <li>Developing automated systems for tracking user behavior and conversion metrics within the product
+                    ecosystem.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="item-header">
+                <span class="company-name">AJOF Engineering Nigeria Limited</span>
+                <span class="date-location">Feb 2026 – March 2024</span>
+            </div>
+            <div class="role-title">Social Media Lead</div>
+            <ul>
+                <li>Orchestrated strategic social growth for a technical engineering niche, resulting in increased
+                    LinkedIn engagement and network expansion.</li>
+                <li>Developed and executed a technical content strategy tailored for geotechnical and civil engineering
+                    audiences.</li>
+                <li>Managed brand positioning and digital presence, bridging the gap between technical expertise and
+                    market perception.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="item-header">
+                <span class="company-name">SME Grant Platform</span>
+                <span class="date-location">2023 – Present</span>
+            </div>
+            <div class="role-title">Full-Stack Developer & Growth Engineer</div>
+            <ul>
+                <li>Developing and maintaining a high-scale Fintech platform focused on secure grant management and
+                    investment workflows.</li>
+                <li>Built robust financial modules using a Full-JS stack with a primary focus on data security and user
+                    acquisition.</li>
+                <li>Optimized platform performance and scalability to handle high-frequency user interactions and
+                    financial data.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Selected Projects</h2>
+
+        <div class="project-item">
+            <div class="item-header">
+                <span class="project-name">Iwalewa Cooperative Management System</span>
+                <span class="date-location">React, Firebase, Financial Logic</span>
+            </div>
+            <ul>
+                <li>Developed a comprehensive cooperative management platform with automated interest calculation and
+                    multi-tier authentication.</li>
+                <li>Engineered complex loan modules that streamlined financial operations for small-scale cooperative
+                    societies.</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <div class="item-header">
+                <span class="project-name">Workchain Platform</span>
+                <span class="date-location">Next.js, HR-Tech, Automation</span>
+            </div>
+            <ul>
+                <li>Built a recruitment and payroll automation system featuring institutional-grade branding and
+                    seamless onboarding flows.</li>
+                <li>Integrated secure authentication and document management for enterprise-level recruitment cycles.
+                </li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <div class="item-header">
+                <span class="project-name">Fero MarketHub</span>
+                <span class="date-location">React, E-commerce, Startup</span>
+            </div>
+            <ul>
+                <li>Engineered a dynamic digital marketplace facilitating seamless buyer-seller interactions with a
+                    focus on UX performance.</li>
+                <li>Implemented responsive design patterns to ensure cross-device accessibility for a growing user base.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <strong>Development:</strong> React.js, Next.js, Firebase, TypeScript, JavaScript (ES6+), HTML5, CSS3,
+                Tailwind CSS.
+            </div>
+            <div class="skill-category">
+                <strong>Growth & Strategy:</strong> SEO Architecture, Technical SEO, Data Analytics, User Acquisition
+                Strategy, LinkedIn Growth.
+            </div>
+            <div class="skill-category">
+                <strong>Tools:</strong> Git, Lucide React, Framer Motion, Google Analytics, Search Console.
+            </div>
+            <div class="skill-category">
+                <strong>Core Competencies:</strong> Product Launch (0-1), SaaS Growth, Financial Systems, Full-Stack
+                Architecture.
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-note">
+        References available upon request.
+    </div>
+</body>
+
+</html>
